@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+    <!-- Menu Principal -->
+    <nav>
+        <h2 class="titulo">Menu de Opções</h2>
+        <ul>
+            <li>1 - Novo salário</li>
+            <li>2 - Férias</li>
+            <li>3 - Décimo terceiro</li>
+            <li>4 - Sair</li>
+        </ul>
+        <form>
+            <label for="opcao-menu">Digite a opção desejada:</label>
+            <input type="number" id="opcao-menu" min="1" max="4" required>
+            <button type="submit">Acessar</button>
+        </form>
+    </nav>
+
+    <!-- Opcao 1: Novo Salario-->
+     <section id="opcao-1">
+        <h3>Opção 1: Calcular Novo Salário</h3>
+        <form>
+            <label for="salario-novo">Digite o salário atual do funcionário (R$):</label>
+            <input type="number" id="salario-novo" step="0.01" min="0" required>
+            <button type="button">Calcular Aumento</button>
+        </form>
+        <div id="resultado-novo-salario">
+            <!-- O resultado do cálculo (15%, 10% ou 5%) será exibido aqui via JS -->
+        </div>
+     </section>
+
+    <!-- Opção 2: Férias -->
+    <section id="opcao-2">
+        <h3>Opção 2: Calcular Férias</h3>
+        <form>
+            <label for="salario-ferias">Digite o salário do funcionário (R$):</label>
+            <input type="number" id="salario-ferias" step="0.01" min="0" required>
+            <button type="button">Calcular Férias</button>
+        </form>
+        <div id="resultado-ferias">
+            <!-- O resultado do cálculo (Salário + 1/2) será exibido aqui via JS -->
+        </div>
+    </section>
+
+    <!-- Opção 3: Décimo Terceiro -->
+    <section id="opcao-3">
+        <h3>Opção 3: Calcular Décimo Terceiro</h3>
+        <form>
+            <p>
+                <label for="salario-13">Digite o salário do funcionário (R$):</label>
+                <input type="number" id="salario-13" step="0.01" min="0" required>
+            </p>
+            <p>
+                <label for="meses-13">Digite o número de meses trabalhados (máx. 12):</label>
+                <input type="number" id="meses-13" min="1" max="12" required>
+            </p>
+            <button type="button">Calcular Décimo Terceiro</button>
+        </form>
+        <div id="resultado-13">
+            <!-- O resultado do cálculo (Salário * meses / 12) será exibido aqui via JS -->
+        </div>
+    </section>
+
+     <!-- Opção 4: Sair -->
+    <section id="opcao-4">
+        <h3>Opção 4: Programa Encerrado</h3>
+        <p>Você saiu do programa com sucesso.</p>
+    </section>
+
+</body>
+</html>

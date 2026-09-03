@@ -1,0 +1,21 @@
+
+.root{
+    --color-primary:#60aaff;
+    --color-secundary:#000000;
+    --color-terciary:#ffffff;
+    --color-quartenary:#ffee00;
+    --color-quintenary:#26ff00;
+     --radius: 14px;
+    --font-titulo: "anton"impact, sans-serif;
+    --font-base: "Inter" ,Roboto, helvetica, arial, sans-serif
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.titulo{  color: #60aaff; }
+.ul{ color:#26ff00;} 
