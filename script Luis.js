@@ -1,7 +1,7 @@
 console.log("Menu de opções:");
 let aumento = 0
 let novoSalario = 0
-// switch (prompt("Escolha uma opção: \n1 - Novo salário \n2 - Férias \n3 - Décimo terceiro \n4 - Sair"))
+switch (prompt("Escolha uma opção: \n1 - Novo salário \n2 - Férias \n3 - Décimo terceiro \n4 - Sair"))
 {
     case "1":
         opcao1();
@@ -28,15 +28,16 @@ function opcao1() {
     if (salario <= 350) {
         aumento = salario * 0.15;
         novoSalario = salario + aumento;
-        alert("O novo salário é: " + novoSalario.toFixed(2));
+        let mensagem = ("O novo salário é: " + novoSalario.toFixed(2));
     }else if(salario >= 351 || salario <= 600 ){
         aumento = salario * 0.10;
         novoSalario = salario + aumento;
-        alert("O novo salário é: " + novoSalario.toFixed(2));
-    } else if (salario >=600)
+        let mensagem = ("O novo salário é: " + novoSalario.toFixed(2));
+    } else(salario >=600)
         aumento = salario * 0.05;
-    novoSalario = salario + aumento;
-    alert("O novo salário é: " + novoSalario.toFixed(2));
+        novoSalario = salario + aumento;
+        let mensagem = ("O novo salário é: " + novoSalario.toFixed(2));
+    alert(mensagem)
 
 }
 
@@ -51,4 +52,8 @@ function opcao3(){
     let mesesTrabalhados = Number(prompt("Quantos meses foram trabalhados: "))
     let decimoTerceiro = (salario3 * mesesTrabalhados) / 12 ;
     alert("O valor do décimo terceiro é: " + decimoTerceiro.toFixed(2));
+}
+
+function opcao4(){
+    alert("Voce saiu do sistema")
 }
